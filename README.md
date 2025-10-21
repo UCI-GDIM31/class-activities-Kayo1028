@@ -6,6 +6,16 @@ Hello world!
 1. The r, g, and b variables are floats because they can be fractional (unlike integers), and they are not text or true/false statements.
 2. The bounce variable is an int because a ball cannot bounce a fraction of a time, and it is not text or true/false statements. 
 3. I thought the correct option would be r+=0.1f, but it wasn't correct because it was missing a semicolon.
+### W3
+Table #15
+The parameters would be the sanity level (0-100) and the return type would be void. 
+1. Classes are like architectural blueprints for buildings because they are templates, while Components are like the buildings made using the blueprints. The characteristics of each building (eg. a house and a school have different purposes, so the features they have differ) are like the Methods, so a house blueprint (Class) will probably have at least one bedroom. Member variables are smaller details on blueprints, such as a client's preferred house color or layout, because they can differ from blueprint to blueprint, even though the general structure (house) is the same.
+2. I wasn't able to get to this part of the project, but I would guess that it's because each bounce is changing the color, so when it bounces too many times it runs out of colors to choose from.  
+## W4
+Table #15
+line 17: The boolean member variable states that the player state of being grounded is true (player should be on the ground).
+line 28: This if statement checks if the space bar is being inputted and if the player is on the ground.
+line 32: if the space button is pressed,then the player will jump, so the grounded state will be false. 
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
