@@ -15,7 +15,9 @@ The parameters would be the sanity level (0-100) and the return type would be vo
 Table #15
 line 17: The boolean member variable states that the player state of being grounded is true (player should be on the ground).
 line 28: This if statement checks if the space bar is being inputted and if the player is on the ground.
-line 32: if the space button is pressed,then the player will jump, so the grounded state will be false. 
+line 32: if the method detects that the space button is pressed,then the player will jump, so the grounded state will be false.
+1. We added Rigidbodies to the cat and ball, since they were the two objects that were moving around. The cat had a Capsule Collider, and the ball had a Sphere Collider. We checked IsTrigger on the goal's Box Collider, since that was the object that indicates whether or not the ball went through and scored a goal.
+2. The first time I tested the game, I didn't freeze the rotation for any of the objects, so the cat would go flying if it hit the ball wrong. Fixing it was pretty simple, all I had to do was freeze the X and Z rotation and the cat functioned much more normally. 
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

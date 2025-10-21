@@ -21,10 +21,11 @@ public class SoccerBall : MonoBehaviour
     //
     // Also, uncomment and FIX the Debug.Log line.
 
-    //private ?? ??
-    //{
+    private void OnTriggerEnter(Collider goal)
+    {
         // finish STEP 1 by uncommenting and fixing the below line!
-        //Debug.Log(SoccerBall detected a collision with a trigger collider!);
+        Debug.Log(goal.gameObject.name);
+
 
         // STEP 2 -------------------------------------------------------------
         // Write an IF STATEMENT to check if the game object we collided with
@@ -33,10 +34,10 @@ public class SoccerBall : MonoBehaviour
         //
         // Then, move your Debug.Log() statement so that it's only called if
         //      the colliding object has the "Goal" tag.
-
+     //  if goal tag = collider.gameObject.Goal;
 
         // STEP 2 -------------------------------------------------------------
-    //}
+    }
 
     // STEP 1 -----------------------------------------------------------------
 
