@@ -22,7 +22,7 @@ line 32: if the method detects that the space button is pressed,then the player 
 Step 1 question: What does multiplying a vector do in terms of magnitude?
 Step 1 answer: Multiplying a vector by a scalar will change the magnitude (it was in the slides, but the word magnitude wasn't used explicitly so I was confused).
 
-The deer class will need the NavMeshAgent to guide it to the desired GameObject. It will also need a Start method to set the destination once at the beginning of the game. 
+The deer class will need the NavMeshAgent to guide it to the desired GameObject. It will also need a Start method to set the destination once at the beginning of the game, and a destination variable so it knows that it needs to be at a specific place (where the desired GameObject is). 
 
 ## Open-Source Assets
 ### W1
