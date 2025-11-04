@@ -23,6 +23,13 @@ Step 1 question: What does multiplying a vector do in terms of magnitude?
 Step 1 answer: Multiplying a vector by a scalar will change the magnitude (it was in the slides, but the word magnitude wasn't used explicitly so I was confused).
 
 The deer class will need the NavMeshAgent to guide it to the desired GameObject. It will also need a Start method to set the destination once at the beginning of the game, and a destination variable so it knows that it needs to be at a specific place (where the desired GameObject is). 
+### W6
+https://docs.google.com/document/d/12El8B1DVwCrcYU4DHfi3xilsWEET20KrlgRqnEkWHi4/edit?usp=sharing
+
+serialize field private float for speed 
+public bool is chasing
+This class needs a speed variable and something to indicate whether the player should be chased or not. 
+This class needs the Start() and Update() methods. The start method will make the bats start chasing the player, and the update method will make the bats go towards the player's current location.
 
 ## Open-Source Assets
 ### W1
