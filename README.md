@@ -30,6 +30,10 @@ serialize field private float for speed
 public bool is chasing
 This class needs a speed variable and something to indicate whether the player should be chased or not. 
 This class needs the Start() and Update() methods. The start method will make the bats start chasing the player, and the update method will make the bats go towards the player's current location.
+### W7
+https://docs.google.com/document/d/12El8B1DVwCrcYU4DHfi3xilsWEET20KrlgRqnEkWHi4/edit?usp=sharing- I mainly did Environment, but everyone worked on a bit of everything
+Need to define what the ground is (can stand and move on ground AND bubble), muskrat should change animations depending on how it's moving (flying/falling, walking, jumping)
+In step 2, the code is incorrect because movement is not a vector. Multiplying a float by a Vector3 is fine, but then multiplying that result again by another Vector3 is not valid syntax.
 
 ## Open-Source Assets
 ### W1

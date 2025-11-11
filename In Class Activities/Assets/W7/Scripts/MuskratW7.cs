@@ -50,6 +50,12 @@ public class MuskratW7 : MonoBehaviour
 
 
         // STEP 3 -------------------------------------------------------------
+        Vector3 worldup = transform.TransformDirection(Vector3.up);
+        transform.RotateAround(
+            transform.position,
+            worldup,
+            leftright * _rotationSpeed * Time.deltaTime
+        );
 
         float forward = Input.GetAxis("Vertical");
         Vector3 axis = transform.TransformDirection(Vector3.right);
@@ -88,6 +94,7 @@ public class MuskratW7 : MonoBehaviour
         float leftright = Input.GetAxis("Horizontal");
 
         // STEP 1 -------------------------------------------------------------
+        transform.Rotate (leftright * Vector3.up * _rotationSpeed * Time.deltaTime); 
 
 
         // STEP 2 -------------------------------------------------------------
@@ -96,7 +103,8 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        //incorrect: transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        transform.Translate(movement * Vector3.forward * _moveSpeed * Time.deltaTime);
 
         // STEP 2 -------------------------------------------------------------
 
@@ -108,10 +116,10 @@ public class MuskratW7 : MonoBehaviour
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
-        
+        if _rigidbody.linearVelocity
         // STEP 4 -------------------------------------------------------------
     }
-
+    
     // ------------------------------------------------------------------------
     private void Jump()
     {
